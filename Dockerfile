@@ -9,5 +9,6 @@ RUN apt-get update \
         cpputest \
         make \
         pkg-config \
+        avrdude \
     && rm -rf /var/lib/apt/lists/*  
 CMD ["make"]
