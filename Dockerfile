@@ -11,4 +11,5 @@ RUN apt-get update \
         pkg-config \
         avrdude \
     && rm -rf /var/lib/apt/lists/*  
+COPY .avrduderc /root/.avrduderc
 CMD ["make"]

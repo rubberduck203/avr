@@ -1,0 +1,2 @@
+default_serial="/dev/ttyUSB0";
+default_programmer="arduino";
