@@ -10,6 +10,8 @@ RUN apt-get update \
         make \
         pkg-config \
         avrdude \
+        minicom \
     && rm -rf /var/lib/apt/lists/*  
-COPY .avrduderc /root/.avrduderc
+COPY avrduderc /root/.avrduderc
+COPY minirc.dfl /etc/minicom/minirc.dfl
 CMD ["make"]
